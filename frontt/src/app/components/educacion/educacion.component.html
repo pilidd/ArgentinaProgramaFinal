@@ -1,0 +1,38 @@
+<section class="row">
+    <h1 class="titulo__expe">Educación</h1>
+
+    
+    <button type="button" class="btn1 btn-outline-dark" routerLink="/nuevaedu" *ngIf="isLogged"  >Agregar Educación</button>
+    
+   
+
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-11">
+
+        <table class="table">
+            <tbody>
+                <ul *ngFor="let Educacion of educacion" class="box__expe">
+                    <li> <h4>      {{Educacion.nombreE}}        </h4>                    </li>
+                    <li>      {{Educacion.descripcionE}}                       </li>
+
+                    <div class="botones__expe"> 
+
+                        <li *ngIf="isLogged"><button class="btn1 btn-light" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-square">Editar</i> </button></li>
+                        <li *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Educacion.id)"><i class="bi bi-trash"></i>BORRAR </button></li>
+
+
+                    </div>
+                    
+                </ul>
+            </tbody>
+    
+    
+        </table>
+
+    </div>
+  
+
+
+
+</section>

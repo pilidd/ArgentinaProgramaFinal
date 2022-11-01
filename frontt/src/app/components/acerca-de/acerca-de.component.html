@@ -1,0 +1,28 @@
+<section class="row" *ngIf="persona">
+   
+   
+    
+
+
+    <div class="div__img">
+        <img src={{persona.img}} id="ProfilePhoto" alt="Foto de Perfil" class="img-fluid">       
+    </div>
+    
+    <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" id="name-info">
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}} </p>
+         
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 div__sobreMi">
+        <span>
+            <h1 class="texto__sobreMi" >Sobre mi</h1>
+            <p class="text__des">{{persona.descripcion}} </p>
+        </span>
+    </div>
+
+
+    <div class="div__boton">
+        <button type="button" class="btn1 btn-outline-dark" routerLink="/editaracercade/1" *ngIf="isLogged"  >Editar Persona</button>
+
+    </div>
+</section>

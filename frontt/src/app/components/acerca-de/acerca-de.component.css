@@ -1,0 +1,172 @@
+.row{
+    padding:15px;
+    background: linear-gradient(35deg,#080433,#33348a);
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+     
+}
+
+
+
+div{
+     
+     
+    color: rgb(255, 255, 255);
+}
+
+.div__img{
+    width: fit-content;
+    position: relative;
+    bottom: 110px;
+}
+
+
+#ProfilePhoto{
+    width: 350px;
+    height: 350px;
+                
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px rgb(43, 42, 42);
+     
+     
+     
+}
+
+
+.btn1{
+    width: fit-content;
+    border-radius: 5px;
+    height: 44px;
+    background: #ececec;
+    text-align: center;
+     
+    border-color: #7d4dbb;
+     
+    border-style: inset;
+    font-weight: 600;
+}
+
+.btn1:hover{
+    background-color: #482575;
+}
+
+
+#nombre{
+    font-weight: bold;    
+    font-size: 30px;
+}
+ 
+#name-info{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+      
+    font-size: 30px;
+    
+    align-items: flex-start;
+     
+
+}
+
+
+.text__des{
+    text-align: center;
+}
+
+
+.div__boton{
+    margin: 0 2rem;
+    padding: 20px;
+    width: fit-content;
+
+}
+
+.div__sobreMi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     
+}
+
+.texto__sobreMi{
+    text-align: center;
+}
+ 
+ 
+
+@media (max-width: 766px){
+    .row{
+        padding: 0px;
+        align-items: center;
+    }
+
+    .div__img{
+        display: flex;
+        justify-content: center;
+        position: initial;
+        width: 250px;
+        
+
+    }
+
+     div{
+        position: initial!important;
+     }
+
+
+    #name-info{
+        position: initial;
+        align-items: center;
+
+    }
+    #nombre{
+        font-weight: bold;
+          
+    }
+
+    #info{
+        margin: 0;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    #ProfilePhoto{
+        width: 300px;
+        height: 300px;
+    }
+} 
+
+@media (max-width: 1024px){
+    .row{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div__img{
+        width: fit-content;
+        position:initial;
+    }
+
+    #name-info{
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .div__sobreMi{
+        position: initial;
+        box-shadow: inset -1px 12em 4em rgb(0 0 0 / 30%);
+    }
+
+    .div__boton{
+        position: initial;
+    }
+
+
+
+}
+

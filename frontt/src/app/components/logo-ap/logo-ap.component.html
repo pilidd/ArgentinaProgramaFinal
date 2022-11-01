@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/APLogo.png" id="logoAP" alt="Logo Argentina Programa">
+
+
+        </div>
+        <div class="redes">    
+            <div class="links__redes"> 
+                <a href=""> <img src="../../../assets/linkedinLogo.png" id="linkedin" > </a> 
+                <a href=""> <img src="../../../assets/facebookLogo.png" id="facebook" > </a>
+                <a href=""> <img src="../../../assets/twitterLogo.png" id="twitter" > </a>
+                <a href=""> <img src="../../../assets/instagramLogo.png" id="instagram" > </a>  
+
+            </div> 
+                            
+                 
+                
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingreso</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesion</button>
+
+                         
+        </div>
+
+    
+    
+    
+    </div>
+    
+
+</div>
+
+
+
+

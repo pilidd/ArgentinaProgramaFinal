@@ -1,0 +1,10 @@
+img{
+    width: 100%;
+    height: 600px;
+}
+
+@media (max-width: 766px){
+   div{
+    display: none;
+   }
+}
